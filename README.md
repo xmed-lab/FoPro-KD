@@ -5,7 +5,7 @@ Representational transfer from publicly available models is a promising techniqu
 
 ![FoPro-KD](fopro-kd.png)
 <!-- <p><img src="fopro-kd.png" width="400" /></p> -->
-<br clear="left"/>
+<br  clear="left"/>
 
 ### Code Base
 
