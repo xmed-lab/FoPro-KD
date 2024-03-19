@@ -40,12 +40,12 @@ Following the setup, you will be equipped to execute experiments with `client_nu
 
 
 ```
-python main.py --method fedfree --free_u=3 --client_number 1 --thread_number 1 --comm_round 100 --lr 0.1 --epochs 5 --data_dir data/ham2019 --update_projector_head='both' --partition_method='homo' --partition_alpha=0 --model='resnet18' --gpu='6' --long_tailed --imb_factor=0.002  --batch_size=32 --loss_fn_name=BSM --adam --fold=1
+python main.py --method fedmas --free_u=3 --client_number 1 --thread_number 1 --comm_round 100 --epochs 1 --data_dir data/ham2019 --update_projector_head='both' --partition_method='homo' --partition_alpha=0 --model='resnet18' --gpu='0' --long_tailed --imb_factor=0.002  --batch_size=32 --loss_fn_name=BSM --adam --fold=1
 ```
 
 To use [dinov2](https://github.com/facebookresearch/dinov2) as your teacher model, please use.
 ```
-python main.py --method fedfree --free_u=3 --client_number 1 --pre_trained_models='dinov2' --thread_number 1 --comm_round 100 --lr 0.1 --epochs 1 --data_dir data/ham2019 --update_projector_head='both' --partition_method='homo' --partition_alpha=0 --model='resnet18' --gpu='3' --long_tailed --imb_factor=0.005  --batch_size=32 --loss_fn_name=BSM --adam --fold=1
+python main.py --method fedmas --free_u=3 --client_number 1 --pre_trained_models='dinov2' --thread_number 1 --comm_round 100 --epochs 1 --data_dir data/ham2019 --update_projector_head='both' --partition_method='homo' --partition_alpha=0 --model='resnet18' --gpu='0' --long_tailed --imb_factor=0.005  --batch_size=32 --loss_fn_name=BSM --adam --fold=1
 ```
 
 Should our data splits or the results thereof be utilized for comparative analysis, kindly acknowledge both papers by citing them as follows:
